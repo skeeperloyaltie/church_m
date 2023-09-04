@@ -53,7 +53,7 @@
 										</thead>
 										<tbody>
 													<?php
-													$members_query = mysqli_query($conn,"select * from members")or die(mysqli_error());
+													$members_query = mysqli_query($conn,"select * from members")or die("Error with query");
 													while($row = mysqli_fetch_array($members_query)){
 													$id = $row['id'];
 													?>
