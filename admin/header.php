@@ -5,7 +5,7 @@
 			<title>Church manager</title>
 		<meta name="description" content="Church manager">
 		<meta name="keywords" content="">
-		<meta name="author" content="Kithinji Goddfrey">
+		<meta name="author" content="Deborah Kerubo">
 		<meta charset="UTF-8">		
         <!-- Bootstrap -->
 			<!-- <link href="images/logo.png" rel="icon" type="image"> -->

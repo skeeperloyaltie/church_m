@@ -7,10 +7,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="St.Lukes Boys School management System">
-    <meta name="author" content="Kithinji Godfrey">
+    <meta name="description" content="">
+    <meta name="author" content="Church Management">
 	<link href="admin/bootstrap/css/index_background.css" rel="stylesheet" media="screen"/>
-<link rel="shortcut icon" href="images/logo.png" />
+<link rel="shortcut icon" href="uploads/me.jpg" />
 
 </style>
 </head>
@@ -42,9 +42,9 @@
 										<center>
 								        <img id="developers" src="developers/admin.jpg" class="img-circle">
 								        <hr>
-										<p>Name: Kithinji Godfrey</p>
-										<p>Address:meru</p>
-										<p>Email:<a href="http://www.gmail.com"> godkith19@gmail.com</a></p>
+										<p>Name: Deborah Kerubo</p>
+										<p>Address:Nairobi</p>
+										<p>Email:<a href="http://www.gmail.com"> debbieKerubo@gmail.com</a></p>
 										<p>Position: Web Programmer </p>
 								        </center>
 								</div>
