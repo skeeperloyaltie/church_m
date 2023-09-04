@@ -1,31 +1,42 @@
 <?php
-$host="localhost";
-		$uname="root";
-		$pas="";
-		$db_name="cman";
-		$tbl_name="members";
-		
-		$conn = mysqli_connect("$host","$uname","$pas") or die ("cannot connect");
-		mysqli_select_db($conn,"$db_name") or die ("cannot select db");
-		?>
-<?php
-if (isset($_POST['login'])){
+$host = "localhost";
+$uname = "root";
+$pas = "";
+$db_name = "cman";
+$tbl_name = "members";
 
-$username=$_POST['username'];
-$password=$_POST['password'];
+// Create a database connection
+$conn = mysqli_connect($host, $uname, $pas) or die("Cannot connect");
+mysqli_select_db($conn, $db_name) or die("Cannot select db");
 
-$login_query=mysqli_query($conn,"select * from members where mobile='$username' and password='$password'");
-$count=mysqli_num_rows($login_query);
-$row=mysqli_fetch_array($login_query);
+if (isset($_POST['login'])) {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
 
+	echo "Username: " . $username . "<br>";
+	echo "Password: " . $password . "<br>";
 
-if ($count > 0){
-session_start();
-$_SESSION['id']=$row['id'];
-header('location:members/dashboard.php');
+    // Use prepared statements to prevent SQL injection
+    $stmt = mysqli_prepare($conn, "SELECT id FROM members WHERE mobile = ? AND password = ?");
+    mysqli_stmt_bind_param($stmt, "ss", $username, $password);
+    mysqli_stmt_execute($stmt);
+    mysqli_stmt_store_result($stmt);
+	echo "Rows found: " . mysqli_stmt_num_rows($stmt) . "<br>";
 
-}else{
-	header('location:index.php');
+    if (mysqli_stmt_num_rows($stmt) > 0) {
+        session_start();
+        $row = mysqli_fetch_assoc($stmt);
+        $_SESSION['id'] = $row['id'];
+        header('location: members/dashboard.php');
+    } else {
+        // header('location: index.php');
+		echo "Username: " . $username . "<br>";
+		echo "Password: " . $password . "<br>";    }
+
+    // Close the prepared statement
+    mysqli_stmt_close($stmt);
 }
-}
+
+// Close the database connection
+mysqli_close($conn);
 ?>
