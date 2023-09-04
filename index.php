@@ -15,28 +15,8 @@
     <link rel="icon" type="icon" href="admin/images/logo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <style>
-        /* Add your CSS for the homepage design here */
-
-        /* Homepage content */
-        #home {
-            flex: 1;
-            padding: 20px;
-        }
-
-        /* Login and Registration forms */
-        #login,
-        #register {
-            flex: 1;
-            padding: 20px;
-            display: none;
-        }
-
-        /* Show the selected form */
-        .active-form {
-            display: block;
-        }
-    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+   
 </head>
 
 <body>
@@ -71,20 +51,66 @@
         </div>
     </nav>
 
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-mdb-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="images/john-cafazza-AeABkasP-24-unsplash.jpg" class="d-block w-100" alt="Wild Landscape"/>
-    </div>
-    <div class="carousel-item">
-      <img src="images/patrick-fore-b_SHPU5M3nk-unsplash.jpg" class="d-block w-100" alt="Camera"/>
-    </div>
-    <div class="carousel-item">
-      <img src="images/sam-balye-WNVnnHHcBeM-unsplash.jpg" class="d-block w-100" alt="Exotic Fruits"/>
-    </div>
-  </div>
-</div>
-<!-- Carousel wrapper -->
+    <center>
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="images/sam-balye-WNVnnHHcBeM-unsplash.jpg">
+                    <div class="carousel-caption">
+                        <b>
+                            <h1 class="text-primary">
+                                Worship</h1>
+
+                            <p>Join us for more sessions</p>
+
+                        </b>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/patrick-fore-b_SHPU5M3nk-unsplash.jpg">
+                    <div class="carousel-caption">
+                        <b>
+                            <h1 class="text-primary">
+                                Elemental Bible study</h1>
+
+                            <p>Come before God</p>
+
+                        </b>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/john-cafazza-AeABkasP-24-unsplash.jpg">
+                    <div class="carousel-caption">
+                        <b>
+                            <h1 class="text-primary">
+                                Praise</h1>
+
+                            <p>Be among us when we celebrate Almighty God</p>
+
+                        </b>
+                    </div>
+                </div>
+            </div>
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </center>
+    <!-- Carousel wrapper -->
     <div class="container mt-5">
         <h1>Welcome to Our Church</h1>
         <div class="row mt-4">
@@ -120,53 +146,53 @@
             </div>
 
             <!-- Grid Layout -->
-        <div class="row mt-4">
-            <!-- Column 1 -->
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="images/sam-balye-WNVnnHHcBeM-unsplash.jpg" class="card-img-top" alt="Image 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Worship </h5>
-                        <p class="card-text">Join us for an exciting worship session. One near God.</p>
-                        <a href="index.php" class="btn btn-primary">Learn More</a>
+            <div class="row mt-4">
+                <!-- Column 1 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/sam-balye-WNVnnHHcBeM-unsplash.jpg" class="card-img-top" alt="Image 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Worship </h5>
+                            <p class="card-text">Join us for an exciting worship session. One near God.</p>
+                            <a href="index.php" class="btn btn-primary">Learn More</a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Column 2 -->
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="images/patrick-fore-b_SHPU5M3nk-unsplash.jpg" class="card-img-top" alt="Image 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Bible study</h5>
-                        <p class="card-text">Lets Commemorate and make it worth of Event 2.</p>
-                        <a href="login.php" class="btn btn-primary">Login</a>
+                <!-- Column 2 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/patrick-fore-b_SHPU5M3nk-unsplash.jpg" class="card-img-top" alt="Image 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Bible study</h5>
+                            <p class="card-text">Lets Commemorate and make it worth of Event 2.</p>
+                            <a href="login.php" class="btn btn-primary">Login</a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Column 3 -->
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="images/john-cafazza-AeABkasP-24-unsplash.jpg" class="card-img-top" alt="Image 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Hillside Prayer</h5>
-                        <p class="card-text">Achieve that direct talk with God today!</p>
-                        <a href="reg.php" class="btn btn-primary">Register</a>
+                <!-- Column 3 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/john-cafazza-AeABkasP-24-unsplash.jpg" class="card-img-top" alt="Image 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Hillside Prayer</h5>
+                            <p class="card-text">Achieve that direct talk with God today!</p>
+                            <a href="reg.php" class="btn btn-primary">Register</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
 
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.min.js" integrity="sha384-f3zPqp3lUjSgCB0+VqDc5OxI7F5f4LBO+w2fFv5w5QvC1O5x27kRPQcc6zDv02jzD" crossorigin="anonymous"></script>
-            <script>
-                import { Carousel } from 'mdb-ui-kit';
-                const myCarousel = document.querySelector('#myCarousel');
-const carousel = new mdb.Carousel(myCarousel);
-</script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.min.js" integrity="sha384-f3zPqp3lUjSgCB0+VqDc5OxI7F5f4LBO+w2fFv5w5QvC1O5x27kRPQcc6zDv02jzD" crossorigin="anonymous"></script>
+      
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js">
+    </script>
 </body>
 
 </html>
