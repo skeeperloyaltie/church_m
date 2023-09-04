@@ -27,10 +27,10 @@
             <div class="collapse navbar-collapse" id="navbarScroll">
                 <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Admin</a>
+                        <a class="nav-link" href="admin/">Admin</a>
                     </li>
 
 
@@ -142,7 +142,7 @@
                 <input type="submit" class="btn btn-primary" value="Sign up" name="submit" />
             </div>
             <p class="change_link">
-                Already a member? <a href="#tologin" class="to_register">Go and log in</a>
+                Already a member? <a href="login.php" class="to_register">Go and log in</a>
             </p>
         </form>
     </div>
@@ -150,7 +150,6 @@
     <!-- Include Bootstrap JS and jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-
 
 
 
@@ -178,10 +177,12 @@
         $ministry = $_POST['ministry'];
         $mobile = $_POST['mobile'];
         $email = $_POST['email'];
-
-
         $username = $_POST['username'];
+
         $password = $_POST['password'];
+
+        // Hash the password
+        $pass = password_hash($password, PASSWORD_BCRYPT);
 
         // Check if the username already exists
         $check_query = mysqli_query($conn, "SELECT * FROM members WHERE username = '$username'");
@@ -191,9 +192,9 @@
             echo "<script>alert('This Member Already Exists');</script>";
             echo "<script>window.location = 'index.php';</script>";
         } else {
-            // Insert new member
+            // Insert new member with hashed password
             $insert_query = "INSERT INTO members (fname, sname, lname, Gender, birthday, residence, pob, ministry, mobile, email, thumbnail, username, password, id)
-                         VALUES ('$fname', '$sname', '$lname', '$gender', '$birthday', '$residence', '$pob', '$ministry', '$mobile', '$email', 'uploads/none.png', '$username', '$password', '$mobile')";
+                     VALUES ('$fname', '$sname', '$lname', '$gender', '$birthday', '$residence', '$pob', '$ministry', '$mobile', '$email', 'uploads/none.png', '$username', '$pass', '$mobile')";
             if (mysqli_query($conn, $insert_query)) {
                 // Insert into activity_log
                 $admin_username = ""; // Replace with the actual admin username
