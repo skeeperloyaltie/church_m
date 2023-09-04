@@ -70,6 +70,21 @@
             </div>
         </div>
     </nav>
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-mdb-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/john-cafazza-AeABkasP-24-unsplash.jpg" class="d-block w-100" alt="Wild Landscape"/>
+    </div>
+    <div class="carousel-item">
+      <img src="images/patrick-fore-b_SHPU5M3nk-unsplash.jpg" class="d-block w-100" alt="Camera"/>
+    </div>
+    <div class="carousel-item">
+      <img src="images/sam-balye-WNVnnHHcBeM-unsplash.jpg" class="d-block w-100" alt="Exotic Fruits"/>
+    </div>
+  </div>
+</div>
+<!-- Carousel wrapper -->
     <div class="container mt-5">
         <h1>Welcome to Our Church</h1>
         <div class="row mt-4">
@@ -104,8 +119,53 @@
                 </div>
             </div>
 
+            <!-- Grid Layout -->
+        <div class="row mt-4">
+            <!-- Column 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/sam-balye-WNVnnHHcBeM-unsplash.jpg" class="card-img-top" alt="Image 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Worship </h5>
+                        <p class="card-text">Join us for an exciting worship session. One near God.</p>
+                        <a href="index.php" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/patrick-fore-b_SHPU5M3nk-unsplash.jpg" class="card-img-top" alt="Image 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Bible study</h5>
+                        <p class="card-text">Lets Commemorate and make it worth of Event 2.</p>
+                        <a href="login.php" class="btn btn-primary">Login</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Column 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/john-cafazza-AeABkasP-24-unsplash.jpg" class="card-img-top" alt="Image 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Hillside Prayer</h5>
+                        <p class="card-text">Achieve that direct talk with God today!</p>
+                        <a href="reg.php" class="btn btn-primary">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.min.js" integrity="sha384-f3zPqp3lUjSgCB0+VqDc5OxI7F5f4LBO+w2fFv5w5QvC1O5x27kRPQcc6zDv02jzD" crossorigin="anonymous"></script>
+            <script>
+                import { Carousel } from 'mdb-ui-kit';
+                const myCarousel = document.querySelector('#myCarousel');
+const carousel = new mdb.Carousel(myCarousel);
+</script>
 
 </body>
 
