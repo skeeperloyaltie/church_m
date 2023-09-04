@@ -7,7 +7,7 @@ $oras = strtotime("now");
 $ora = date("Y-m-d",$oras);										
 mysqli_query($conn,"update user_log set
 logout_Date = '$ora'												
-where admin_id = '$session_id' ")or die(mysqli_error());
+where admin_id = '$session_id' ")or die("Error in Query");
 
 session_destroy();
 header('location:index.php'); 

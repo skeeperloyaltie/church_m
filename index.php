@@ -51,7 +51,13 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Admin</a>
+                        <a class="nav-link" href="admin/">Admin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.php">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reg.php">Register</a>
                     </li>
 
 
@@ -63,61 +69,42 @@
             </div>
         </div>
     </nav>
-
-
-    <div class="container-lg my-3">
-        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-            <!-- Carousel indicators -->
-            <ol class="carousel-indicators">
-                <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
-                <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
-                <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
-            </ol>
-
-            <!-- Wrapper for carousel items -->
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="images/aaron-burden-5c5VcFshOds-unsplash.jpg" class="d-block w-100" alt="Slide 1">
-                    <div class="carousel-caption d-none d-md-block">
-                        <p>
-                            <a href="#" onclick="showLogin();">Login</a> or
-                            <a href="#" onclick="showRegister();">Register</a>
-                        </p>
+    <div class="container mt-5">
+        <h1>Welcome to Our Church</h1>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/aaron-burden-5c5VcFshOds-unsplash.jpg" class="card-img-top" alt="Image 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Sunday Worship</h5>
+                        <p class="card-text">Join us every Sunday for a powerful worship service.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="images/akira-hojo-_86u_Y0oAaM-unsplash.jpg" class="d-block w-100" alt="Slide 2">
-                    <div class="carousel-caption d-none d-md-block">
-                        <p>
-                            <a href="#" onclick="showLogin();">Login</a> or
-                            <a href="#" onclick="showRegister();">Register</a>
-                        </p>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/akira-hojo-_86u_Y0oAaM-unsplash.jpg" class="card-img-top" alt="Image 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Community Outreach</h5>
+                        <p class="card-text">Get involved in our community outreach programs and make a difference.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="images/bg.jpg" class="d-block w-100" alt="Slide 3">
-                    <div class="carousel-caption d-none d-md-block">
-                        <p>
-                            <a href="#" onclick="showLogin();">Login</a> or
-                            <a href="#" onclick="showRegister();">Register</a>
-                        </p>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/bg.jpg" class="card-img-top" alt="Image 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Bible Study</h5>
+                        <p class="card-text">Join our weekly Bible study sessions to deepen your faith.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
                     </div>
                 </div>
             </div>
 
-            <!-- Carousel controls -->
-            <a class="carousel-control-prev" href="#myCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </a>
-            <a class="carousel-control-next" href="#myCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </a>
-        </div>
-       
-    </div>
 
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.min.js" integrity="sha384-f3zPqp3lUjSgCB0+VqDc5OxI7F5f4LBO+w2fFv5w5QvC1O5x27kRPQcc6zDv02jzD" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.min.js" integrity="sha384-f3zPqp3lUjSgCB0+VqDc5OxI7F5f4LBO+w2fFv5w5QvC1O5x27kRPQcc6zDv02jzD" crossorigin="anonymous"></script>
 
 </body>
 

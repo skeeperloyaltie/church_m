@@ -6,8 +6,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="St.Lukes Boys School management System">
-    <meta name="author" content="Kithinji Godfrey">
+    <meta name="description" content="Gospel">
+    <meta name="author" content="Deborah Kerubo">
 	<link href="bootstrap/css/index_background.css" rel="stylesheet" media="screen"/>
 
 </head>
@@ -20,7 +20,7 @@
 			 <?php include('sidebar.php'); ?>		
                 <div class="span9" id="content">
                     <div class="row-fluid">
-         	         <?php $query= mysqli_query($conn,"select * from admin where admin_id = '$session_id'")or die(mysqli_error());
+         	         <?php $query= mysqli_query($conn,"select * from admin where admin_id = '$session_id'")or die("Error in Query");
 			         $row = mysqli_fetch_array($query);			
 			         ?>
                     <div class="col-lg-12">
@@ -42,7 +42,7 @@
 <div class="block-content collapse in">
 <div id="page-wrapper">
         <?php 
-	     $student = mysqli_query($conn,"select * from members ")or die(mysqli_error());
+	     $student = mysqli_query($conn,"select * from members ")or die("Error in Query");
 		 $student = mysqli_num_rows($student);
 		 ?>
                 <div class="row-fluid">				
@@ -74,7 +74,7 @@
 	     $new = mysqli_query($conn,"SELECT * 
 FROm  members
 WHERE  DATE_SUB(STR_TO_DATE(date, '%Y-%m-%d'), INTERVAL YEAR(CURDATE())-YEAR(STR_TO_DATE(date, '%Y-%m-%d')) YEAR) 
-            BETWEEN CURDATE() AND DATE_SUB(CURDATE(), INTERVAL -2 DAY)")or die(mysqli_error());
+            BETWEEN CURDATE() AND DATE_SUB(CURDATE(), INTERVAL -2 DAY)")or die("Error in Query");
 		 $new = mysqli_num_rows($new);
 		 ?>			
                      <div class="span6">
@@ -105,7 +105,7 @@ WHERE  DATE_SUB(STR_TO_DATE(date, '%Y-%m-%d'), INTERVAL YEAR(CURDATE())-YEAR(STR
  </div> 				 							
 <div id="page-wrapper">
         <?php 
-	     $student = mysqli_query($conn,"select * from giving ")or die(mysqli_error());
+	     $student = mysqli_query($conn,"select * from giving ")or die("Error in Query");
 		 $student = mysqli_num_rows($student);
 		 ?>
                 <div class="row-fluid">				

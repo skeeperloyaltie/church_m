@@ -42,95 +42,116 @@
             </div>
         </div>
     </nav>
+    <!DOCTYPE html>
 
-    <section>
-        
-
-          
-
-
-            
-                            <div id="register" class="form">
-                                <form action="reg.php" method="POST" autocomplete="on">
-                                    <h1> Sign up </h1>
-                                    <p>
-                                        <label for="usernamesignup" class="uname" data-icon="u">First Name</label>
-                                        <input id="usernamesignup" name="fname" required="required" type="text" placeholder="John" />
-                                    </p>
-                                    <p>
-                                        <label for="usernamesignup" class="uname" data-icon="u"> Middle Name</label>
-                                        <input id="usernamesignup" name="sname" required="required" type="text" placeholder="Doe" />
-                                    </p>
-                                    <p>
-                                        <label for="usernamesignup" class="uname" data-icon="u">Last Name</label>
-                                        <input id="usernamesignup" name="lname" required="required" type="text" placeholder="John" />
-                                    </p>
-                                    <p>
-                                        <label for="usernamesignup" class="uname" data-icon="u">Gender</label>
-
-                                        <select name="gender" id="usernamesignup" required="required" type="text">
-                                            <option value="Select Gender">Select Gender</option>
-                                            <option value="Male">Male</option>
-                                            <option value="Female">Female</option>
-
-                                        </select>
-                                    </p>
-                                    <p>
-                                        <label for="usernamesignup" class="uname" data-icon="u">Date Of Birth</label>
-                                        <input id="usernamesignup" type="date" name="birthday" min="1900-01-02" />
-                                    </p>
-                                    <p>
-                                        <label for="usernamesignup" class="uname" data-icon="u">Residence</label>
-                                        <input id="usernamesignup" name="residence" required="required" type="text" placeholder="Huruma" />
-                                    </p>
-                                    <p>
-                                        <label for="usernamesignup" class="uname" data-icon="u">Place of Birth</label>
-                                        <input id="usernamesignup" name="pob" required="required" type="text" placeholder="Kirinyaga" />
-                                    </p>
-                                    <p>
-                                        <label for="usernamesignup" class="uname" data-icon="u">Ministry</label>
-                                        <select name="ministry" id="usernamesignup" required="required" type="text">
-                                            <option value="None">None</option>
-                                            <option value="Praise and Worship">Praise and Worship</option>
-                                            <option value="Ushering">Ushering</option>
-                                            <option value="Hostessing">Hostessing</option>
-                                            <option value="Media and IT">Media and IT</option>
-                                            <option value="Sunday School">Sunday School</option>
-                                        </select>
-                                    </p>
-                                    <p>
-                                        <label for="emailsignup" class="youmail" data-icon="e"> Your email</label>
-                                        <input id="emailsignup" name="email" required="required" type="email" placeholder="mysupermail@mail.com" />
-                                    </p>
-                                    <p>
-                                        <label for="passwordsignup" class="youpasswd" data-icon="p">Mobile Number </label>
-                                        <input id="passwordsignup" name="mobile" required="required" type="text" placeholder="eg.0700000000" />
-                                    </p>
-                                    <p>
-                                        <label for="username" class="username" data-icon="p">Username </label>
-                                        <input id="username" name="username" required="required" type="username" placeholder="eg. debbie" />
-
-                                    </p>
-                                    <p>
-                                        <label for="passwordsignup_confirm" class="youpasswd" data-icon="p">Password </label>
-                                        <input id="passwordsignup_confirm" name="password" required="required" type="password" placeholder="eg. X8df!90EO" />
-                                    </p>
-                                    <p class="signin button">
-                                        <input type="submit" value="Sign up" name="submit" />
-                                    </p>
-                                    <p class="change_link">
-                                        Already a member ?
-                                        <a href="#tologin" class="to_register"> Go and log in </a>
-                                    </p>
-                                </form>
-                            </div>
-                        </div>
+    <div class="container mt-5">
+        <form action="reg.php" method="POST" autocomplete="on">
+            <h1 class="mb-4">Sign up</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="mb-3">
+                        <label for="fname" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="fname" name="fname" required placeholder="John">
                     </div>
-
+                </div>
+                <div class="col-md-4">
+                    <div class="mb-3">
+                        <label for="sname" class="form-label">Middle Name</label>
+                        <input type="text" class="form-control" id="sname" name="sname" required placeholder="Doe">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="mb-3">
+                        <label for="lname" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="lname" name="lname" required placeholder="John">
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="mb-3">
+                        <label for="gender" class="form-label">Gender</label>
+                        <select class="form-select" id="gender" name="gender" required>
+                            <option value="Select Gender">Select Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="mb-3">
+                        <label for="birthday" class="form-label">Date Of Birth</label>
+                        <input type="date" class="form-control" id="birthday" name="birthday" min="1900-01-02">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="mb-3">
+                        <label for="residence" class="form-label">Residence</label>
+                        <input type="text" class="form-control" id="residence" name="residence" required placeholder="Huruma">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="mb-3">
+                        <label for="pob" class="form-label">Place of Birth</label>
+                        <input type="text" class="form-control" id="pob" name="pob" required placeholder="Kirinyaga">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="mb-3">
+                        <label for="ministry" class="form-label">Ministry</label>
+                        <select class="form-select" id="ministry" name="ministry" required>
+                            <option value="None">None</option>
+                            <option value="Praise and Worship">Praise and Worship</option>
+                            <option value="Ushering">Ushering</option>
+                            <option value="Hostessing">Hostessing</option>
+                            <option value="Media and IT">Media and IT</option>
+                            <option value="Sunday School">Sunday School</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Your Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required placeholder="mysupermail@mail.com">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="mb-3">
+                        <label for="mobile" class="form-label">Mobile Number</label>
+                        <input type="text" class="form-control" id="mobile" name="mobile" required placeholder="eg. 0700000000">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Username</label>
+                        <input type="text" class="form-control" id="username" name="username" required placeholder="eg. debbie">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" name="password" required placeholder="eg. X8df!90EO">
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <input type="submit" class="btn btn-primary" value="Sign up" name="submit" />
+            </div>
+            <p class="change_link">
+                Already a member? <a href="#tologin" class="to_register">Go and log in</a>
+            </p>
+        </form>
+    </div>
+
+    <!-- Include Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+
 
 
 
