@@ -1,14 +1,8 @@
 <!DOCTYPE html>
-<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6 lt8"> <![endif]-->
-<!--[if IE 7 ]>    <html lang="en" class="no-js ie7 lt8"> <![endif]-->
-<!--[if IE 8 ]>    <html lang="en" class="no-js ie8 lt8"> <![endif]-->
-<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!-->
-<html lang="en" class="no-js"> <!--<![endif]-->
+<html lang="en" class="no-js">
 
 <head>
     <meta charset="UTF-8" />
-    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  -->
     <title>CHURCH MANAGER</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Church Manager" />
@@ -18,130 +12,113 @@
     <link rel="stylesheet" type="text/css" href="css/demo.css" />
     <link rel="stylesheet" type="text/css" href="css/style3.css" />
     <link rel="stylesheet" type="text/css" href="css/animate-custom.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <style>
+        /* Add your CSS for the homepage design here */
+
+        /* Homepage content */
+        #home {
+            flex: 1;
+            padding: 20px;
+        }
+
+        /* Login and Registration forms */
+        #login,
+        #register {
+            flex: 1;
+            padding: 20px;
+            display: none;
+        }
+
+        /* Show the selected form */
+        .active-form {
+            display: block;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="container">
-        <!-- Codrops top bar -->
-        <div class="codrops-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Church Manager</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Admin</a>
+                    </li>
 
 
-            <div class="clr"></div>
-        </div><!--/ Codrops top bar -->
-        <header>
-            <h1>CHURCH MANAGER <span>ACCESS POINT</span></h1>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
 
-        </header>
-        <section>
-            <div id="container_demo">
-                <!-- hidden anchor to stop jump http://www.css3create.com/Astuce-Empecher-le-scroll-avec-l-utilisation-de-target#wrap4  -->
-                <a class="hiddenanchor" id="toregister"></a>
-                <a class="hiddenanchor" id="tologin"></a>
-                <div id="wrapper">
-                    <div id="login" class="animate form">
-                        <form action="login.php" method="POST" autocomplete="on">
-                            <h1>Log in</h1>
-                            <p>
-                                <label for="username" class="uname" data-icon="u"> Username </label>
-                                <input id="username" name="username" required="required" type="text" placeholder="Mobile Number" />
-                            </p>
-                            <p>
-                                <label for="password" class="youpasswd" data-icon="p"> Your password </label>
-                                <input id="password" name="password" required="required" type="password" placeholder="eg. X8df!90EO" />
-                            </p>
-                            <p class="keeplogin">
-                                <input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" />
-                                <label for="loginkeeping">Keep me logged in</label>
-                            </p>
-                            <p class="login button">
-                                <input type="submit" value="Login" name="login" />
-                            </p>
-                            <p class="change_link">
-                                Not a member yet ?
-                                <a href="#toregister" class="to_register">Join us</a>
-                            </p>
-                        </form>
+
+    <div class="container-lg my-3">
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <!-- Carousel indicators -->
+            <ol class="carousel-indicators">
+                <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+                <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for carousel items -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/aaron-burden-5c5VcFshOds-unsplash.jpg" class="d-block w-100" alt="Slide 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>
+                            <a href="#" onclick="showLogin();">Login</a> or
+                            <a href="#" onclick="showRegister();">Register</a>
+                        </p>
                     </div>
-
-                    <div id="register" class="animate form">
-                        <form action="reg.php" method="POST" autocomplete="on">
-                            <h1> Sign up </h1>
-                            <p>
-                                <label for="usernamesignup" class="uname" data-icon="u">First Name</label>
-                                <input id="usernamesignup" name="fname" required="required" type="text" placeholder="John" />
-                            </p>
-                            <p>
-                                <label for="usernamesignup" class="uname" data-icon="u"> Middle Name</label>
-                                <input id="usernamesignup" name="sname" required="required" type="text" placeholder="Doe" />
-                            </p>
-                            <p>
-                                <label for="usernamesignup" class="uname" data-icon="u">Last Name</label>
-                                <input id="usernamesignup" name="lname" required="required" type="text" placeholder="John" />
-                            </p>
-                            <p>
-                                <label for="usernamesignup" class="uname" data-icon="u">Gender</label>
-
-                                <select name="gender" id="usernamesignup" required="required" type="text">
-                                    <option value="Select Gender">Select Gender</option>
-                                    <option value="Male">Male</option>
-                                    <option value="Female">Female</option>
-
-                                </select>
-                            </p>
-                            <p>
-                                <label for="usernamesignup" class="uname" data-icon="u">Date Of Birth</label>
-                                <input id="usernamesignup" type="date" name="birthday" min="1900-01-02" />
-                            </p>
-                            <p>
-                                <label for="usernamesignup" class="uname" data-icon="u">Residence</label>
-                                <input id="usernamesignup" name="residence" required="required" type="text" placeholder="Huruma" />
-                            </p>
-                            <p>
-                                <label for="usernamesignup" class="uname" data-icon="u">Place of Birth</label>
-                                <input id="usernamesignup" name="pob" required="required" type="text" placeholder="Kirinyaga" />
-                            </p>
-                            <p>
-                                <label for="usernamesignup" class="uname" data-icon="u">Ministry</label>
-                                <select name="ministry" id="usernamesignup" required="required" type="text">
-                                    <option value="None">None</option>
-                                    <option value="Praise and Worship">Praise and Worship</option>
-                                    <option value="Ushering">Ushering</option>
-                                    <option value="Hostessing">Hostessing</option>
-                                    <option value="Media and IT">Media and IT</option>
-                                    <option value="Sunday School">Sunday School</option>
-                                </select>
-                            </p>
-                            <p>
-                                <label for="emailsignup" class="youmail" data-icon="e"> Your email</label>
-                                <input id="emailsignup" name="email" required="required" type="email" placeholder="mysupermail@mail.com" />
-                            </p>
-                            <p>
-                                <label for="passwordsignup" class="youpasswd" data-icon="p">Mobile Number </label>
-                                <input id="passwordsignup" name="mobile" required="required" type="text" placeholder="eg.0700000000" />
-                            </p>
-                            <p>
-                                <label for="username" class="username" data-icon="p">Username </label>
-                                <input id="username" name="username" required="required" type="username" placeholder="eg. debbie" />
-
-                            </p>
-                            <p>
-                                <label for="passwordsignup_confirm" class="youpasswd" data-icon="p">Password </label>
-                                <input id="passwordsignup_confirm" name="password" required="required" type="password" placeholder="eg. X8df!90EO" />
-                            </p>
-                            <p class="signin button">
-                                <input type="submit" value="Sign up" name="submit" />
-                            </p>
-                            <p class="change_link">
-                                Already a member ?
-                                <a href="#tologin" class="to_register"> Go and log in </a>
-                            </p>
-                        </form>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/akira-hojo-_86u_Y0oAaM-unsplash.jpg" class="d-block w-100" alt="Slide 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>
+                            <a href="#" onclick="showLogin();">Login</a> or
+                            <a href="#" onclick="showRegister();">Register</a>
+                        </p>
                     </div>
-
+                </div>
+                <div class="carousel-item">
+                    <img src="images/bg.jpg" class="d-block w-100" alt="Slide 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>
+                            <a href="#" onclick="showLogin();">Login</a> or
+                            <a href="#" onclick="showRegister();">Register</a>
+                        </p>
+                    </div>
                 </div>
             </div>
-        </section>
+
+            <!-- Carousel controls -->
+            <a class="carousel-control-prev" href="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+       
     </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.min.js" integrity="sha384-f3zPqp3lUjSgCB0+VqDc5OxI7F5f4LBO+w2fFv5w5QvC1O5x27kRPQcc6zDv02jzD" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
