@@ -120,6 +120,11 @@
                                 <input id="passwordsignup" name="mobile" required="required" type="text" placeholder="eg.0700000000" />
                             </p>
                             <p>
+                                <label for="username" class="username" data-icon="p">Username </label>
+                                <input id="username" name="username" required="required" type="username" placeholder="eg. debbie" />
+
+                            </p>
+                            <p>
                                 <label for="passwordsignup_confirm" class="youpasswd" data-icon="p">Password </label>
                                 <input id="passwordsignup_confirm" name="password" required="required" type="password" placeholder="eg. X8df!90EO" />
                             </p>

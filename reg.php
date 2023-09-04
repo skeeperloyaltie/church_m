@@ -17,8 +17,11 @@ $username = $_POST['username'];
 $password = $_POST['password'];
 
 
-$query = @mysqli_query($conn,"select * from members where  mobile = '$mobile'  ")or die(mysqli_error());
+$query = @mysqli_query($conn,"select * from members where  username = '$username'  ")or die("Oops! Check the records");
 $count = mysqli_num_rows($query);
+
+echo "Rows found: " . mysqli_num_rows($query) . "<br>";
+
 
 if ($count > 0){ ?>
 <script>
@@ -28,9 +31,9 @@ window.location = "index.php";
 <?php
 }else{
 mysqli_query($conn,"insert into members (fname,sname,lname,Gender,birthday,residence,pob,ministry,mobile,email,thumbnail,username,password,id) 
-values('$fname','$sname','$lname','$Gender','$birthday','$residence','$pob','$ministry','$mobile','$email','uploads/none.png','$username','$password','$mobile')")or die(mysqli_error());
+values('$fname','$sname','$lname','$Gender','$birthday','$residence','$pob','$ministry','$mobile','$email','uploads/none.png','$username','$password','$mobile')")or die("Cannot insert into db!");
 
-mysqli_query($conn,"insert into activity_log (date,username,action) values(NOW(),'$admin_username','Added member $mobile')")or die(mysqli_error());
+mysqli_query($conn,"insert into activity_log (date,username,action) values(NOW(),'$admin_username','Added member $mobile')")or die("Cannot insert into activity");
 ?>
 <script>
 window.location = "index.php";
