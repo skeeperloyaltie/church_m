@@ -1,3 +1,5 @@
+[![Laravel](https://github.com/skeeperloyaltie/church_m/actions/workflows/laravel.yml/badge.svg)](https://github.com/skeeperloyaltie/church_m/actions/workflows/laravel.yml)
+
 ### Oooh you might ask . wtf am i doing
 
 ## Well welcome to our church 
