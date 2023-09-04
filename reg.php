@@ -1,6 +1,6 @@
 <?php
 error_reporting(0);
- $db = mysqli_select_db('cman',@mysqli_connect('localhost','root','')); ?>
+ $db = mysqli_select_db('cman', @mysqli_connect('localhost','root','')); ?>
 <?php
 if (isset($_POST['submit'])){
 $fname = $_POST['fname'];
@@ -13,6 +13,7 @@ $pob = $_POST['pob'];
 $ministry = $_POST['ministry'];
 $mobile= $_POST['mobile'];
 $email= $_POST['email'];
+$username = $_POST['username'];
 $password = $_POST['password'];
 
 
@@ -26,8 +27,8 @@ window.location = "index.php";
 </script>
 <?php
 }else{
-mysqli_query($conn,"insert into members (fname,sname,lname,Gender,birthday,residence,pob,ministry,mobile,email,thumbnail,password,id) 
-values('$fname','$sname','$lname','$Gender','$birthday','$residence','$pob','$ministry','$mobile','$email','uploads/none.png','$password','$mobile')")or die(mysqli_error());
+mysqli_query($conn,"insert into members (fname,sname,lname,Gender,birthday,residence,pob,ministry,mobile,email,thumbnail,username,password,id) 
+values('$fname','$sname','$lname','$Gender','$birthday','$residence','$pob','$ministry','$mobile','$email','uploads/none.png','$username','$password','$mobile')")or die(mysqli_error());
 
 mysqli_query($conn,"insert into activity_log (date,username,action) values(NOW(),'$admin_username','Added member $mobile')")or die(mysqli_error());
 ?>

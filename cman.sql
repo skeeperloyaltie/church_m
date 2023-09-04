@@ -196,6 +196,7 @@ CREATE TABLE IF NOT EXISTS `members` (
   `mobile` varchar(100) DEFAULT NULL,
   `email` varchar(100) DEFAULT NULL,
   `thumbnail` varchar(500) DEFAULT NULL,
+  `username` varchar(500) DEFAULT NULL,
   `password` varchar(100) DEFAULT NULL,
   `id` varchar(10) DEFAULT NULL,
   `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -206,12 +207,12 @@ CREATE TABLE IF NOT EXISTS `members` (
 -- Dumping data for table `members`
 --
 
-INSERT INTO `members` (`keyu`, `fname`, `sname`, `lname`, `Gender`, `Birthday`, `Residence`, `pob`, `ministry`, `mobile`, `email`, `thumbnail`, `password`, `id`, `date`) VALUES
-(1, 'Godfrey', 'Kithinji', 'Mutia', 'Male', '1992-02-24', 'Huruma', 'Meru', 'Praise and Worship', '0725873436', 'godkith@gmail.com', 'uploads/none.jpg', '1234', '0725873436', '2017-01-11 11:34:34'),
-(3, 'SIMON', 'Obonyo', 'MUSAU', 'other', '1903-12-01', 'Kiambiu', 'Kiambuu', 'Praise and Worship', '0720571204', 'email', 'uploads/none.png', '1234', '0720571204', '2017-01-11 11:34:34'),
-(4, 'Moses', 'Nkoitoi', 'Tiameti', 'Male', '1990-12-19', 'Kiambiu', 'Nairobi', 'Hostessing', '0723437369', 'godkde9@gmail.com', 'uploads/none.png', '0000', '0723437369', '2017-01-11 11:34:34'),
-(5, 'GEOFFREY', 'Obonyo', 'MUSAU', 'Male', '2000-03-03', 'Kiambiu', 'Kiambuu', 'Ushering', '00000000000', 'kifrey24@gmail.com', 'uploads/none.png', '0000', '0000000000', '2017-01-12 06:05:26'),
-(6, 'baraka', 'abraham', 'abraham', 'Male', '1987-01-16', 'kiambu', 'kiambu', 'Sunday School', '0733997722', 'barakaabraham@gmail.com', 'uploads/none.png', '0000', '0733997722', '2017-02-15 05:54:40');
+INSERT INTO `members` (`keyu`, `fname`, `sname`, `lname`, `Gender`, `Birthday`, `Residence`, `pob`, `ministry`, `mobile`, `email`, `thumbnail`, `username`, `password`, `id`, `date`) VALUES
+(1, 'Godfrey', 'Kithinji', 'Mutia', 'Male', '1992-02-24', 'Huruma', 'Meru', 'Praise and Worship', '0725873436', 'godkith@gmail.com', 'uploads/none.jpg','master', '1234', '0725873436', '2017-01-11 11:34:34'),
+(3, 'SIMON', 'Obonyo', 'MUSAU', 'other', '1903-12-01', 'Kiambiu', 'Kiambuu', 'Praise and Worship', '0720571204', 'email', 'uploads/none.png', '','1234', '0720571204', '2017-01-11 11:34:34'),
+(4, 'Moses', 'Nkoitoi', 'Tiameti', 'Male', '1990-12-19', 'Kiambiu', 'Nairobi', 'Hostessing', '0723437369', 'godkde9@gmail.com', 'uploads/none.png', '', '0000', '0723437369', '2017-01-11 11:34:34'),
+(5, 'GEOFFREY', 'Obonyo', 'MUSAU', 'Male', '2000-03-03', 'Kiambiu', 'Kiambuu', 'Ushering', '00000000000', 'kifrey24@gmail.com', 'uploads/none.png', '','0000', '0000000000', '2017-01-12 06:05:26'),
+(6, 'baraka', 'abraham', 'abraham', 'Male', '1987-01-16', 'kiambu', 'kiambu', 'Sunday School', '0733997722', 'barakaabraham@gmail.com', 'uploads/none.png', '','0000', '0733997722', '2017-02-15 05:54:40');
 
 -- --------------------------------------------------------
 

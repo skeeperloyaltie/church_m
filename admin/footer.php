@@ -4,7 +4,7 @@
  $date = new DateTime();
  echo $date->format(' Y');
  ?> </h3></p>
-		 <h3> <p align="center"><h3 align="center"><strong> Designed by: <a href="http://softmaven.co.ke" target="_blank" >Softmaven Technologies</a></h3></strong></p>
+		 <h3> <p align="center"><h3 align="center"><strong> Designed by: <a href="" target="_blank" >@debbie</a></h3></strong></p>
 		  		  <h3 align="center"> Follow Us :</h3> <p align="center">
 <a href="#" ><img src="images/facebook.png" id=social /></a>
 <a href="#"><img src="images/twitter.png" id=social /></a>
