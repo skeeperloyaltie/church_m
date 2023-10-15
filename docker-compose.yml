@@ -1,0 +1,7 @@
+version: '2'
+services:
+  php:
+    image: vultr-php
+    volumes:
+      - /:/.
+    working_dir: .
