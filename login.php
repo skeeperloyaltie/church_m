@@ -64,7 +64,7 @@
 						<h1>Log in</h1>
 						<p>
 							<label for="username" class="uname" data-icon="u"> Username </label>
-							<input id="username" name="username" required="required" type="text" placeholder="Mobile Number" />
+							<input id="username" name="username" required="required" type="text" placeholder="Username" />
 						</p>
 						<p>
 							<label for="password" class="youpasswd" data-icon="p"> Your password </label>
