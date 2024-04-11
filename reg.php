@@ -81,7 +81,7 @@
                 <div class="col-md-4">
                     <div class="mb-3">
                         <label for="birthday" class="form-label">Date Of Birth</label>
-                        <input type="date" class="form-control" id="birthday" name="birthday" min="1900-01-02">
+                        <input type="date" class="form-control" id="birthday" name="birthday" min="1900-01-02" max="2023-12-31">
                     </div>
                 </div>
                 <div class="col-md-4">
