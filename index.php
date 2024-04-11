@@ -16,40 +16,50 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-   
+    <style>
+    .search-bar input {
+        max-width: 200px; /* Adjust the width as needed */
+    }
+
+    .search-bar button {
+        padding: 0 10px; /* Adjust padding to make the button slimmer */
+    }
+</style>
+
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Church Manager</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarScroll">
-                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="admin/">Admin</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="login.php">Login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="reg.php">Register</a>
-                    </li>
-
-
-                </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Church Manager</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" style="float:left;" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="admin/">Admin</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.php">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="reg.php">Register</a>
+                </li>
+            </ul>
+            <!-- Search form -->
+            <form class="d-flex search-bar" style="float:right;">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
         </div>
-    </nav>
+    </div>
+</nav>
+
+
 
     <center>
 
@@ -63,7 +73,7 @@
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
                 <div class="item active">
-                    <img height="50px" src="images/sam-balye-WNVnnHHcBeM-unsplash.jpg">
+                    <img height="50px" src="images/2.png">
                     <div class="carousel-caption">
                         <b>
                             <h1 class="text-primary">
@@ -75,7 +85,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <img height="50px" src="images/patrick-fore-b_SHPU5M3nk-unsplash.jpg">
+                    <img height="50px" src="images/3.png">
                     <div class="carousel-caption">
                         <b>
                             <h1 class="text-primary">
@@ -87,7 +97,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <img height="50px" src="images/john-cafazza-AeABkasP-24-unsplash.jpg">
+                    <img height="50px" src="images/1.png">
                     <div class="carousel-caption">
                         <b>
                             <h1 class="text-primary">
@@ -116,7 +126,7 @@
         <div class="row mt-4">
             <div class="col-md-4">
                 <div class="card">
-                    <img src="images/aaron-burden-5c5VcFshOds-unsplash.jpg" class="card-img-top" alt="Image 1">
+                    <img src="images/2.png" class="card-img-top" alt="Image 1">
                     <div class="card-body">
                         <h5 class="card-title">Sunday Worship</h5>
                         <p class="card-text">Join us every Sunday for a powerful worship service.</p>
@@ -126,7 +136,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <img src="images/akira-hojo-_86u_Y0oAaM-unsplash.jpg" class="card-img-top" alt="Image 2">
+                    <img src="images/3.png" class="card-img-top" alt="Image 2">
                     <div class="card-body">
                         <h5 class="card-title">Community Outreach</h5>
                         <p class="card-text">Get involved in our community outreach programs and make a difference.</p>
@@ -150,7 +160,7 @@
                 <!-- Column 1 -->
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="images/sam-balye-WNVnnHHcBeM-unsplash.jpg" class="card-img-top" alt="Image 1">
+                        <img src="images/3.png" class="card-img-top" alt="Image 1">
                         <div class="card-body">
                             <h5 class="card-title">Worship </h5>
                             <p class="card-text">Join us for an exciting worship session. One near God.</p>
@@ -162,7 +172,7 @@
                 <!-- Column 2 -->
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="images/patrick-fore-b_SHPU5M3nk-unsplash.jpg" class="card-img-top" alt="Image 2">
+                        <img src="images/1.png" class="card-img-top" alt="Image 2">
                         <div class="card-body">
                             <h5 class="card-title">Bible study</h5>
                             <p class="card-text">Lets Commemorate and make it worth of Event 2.</p>

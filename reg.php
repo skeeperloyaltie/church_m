@@ -122,7 +122,7 @@
                 <div class="col-md-4">
                     <div class="mb-3">
                         <label for="mobile" class="form-label">Mobile Number</label>
-                        <input type="text" class="form-control" id="mobile" name="mobile" required placeholder="eg. 0700000000">
+                        <input type="tel" class="form-control" id="mobile" name="mobile" required placeholder="eg. 0700000000" pattern="[0-9]{10}">
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -212,3 +212,23 @@
     // Close the database connection
     mysqli_close($conn);
     ?>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation');
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+
+        form.classList.add('was-validated');
+      }, false);
+    });
+}, false);
+</script>
