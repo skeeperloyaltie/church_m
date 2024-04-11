@@ -63,7 +63,7 @@
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
                 <div class="item active">
-                    <img src="images/sam-balye-WNVnnHHcBeM-unsplash.jpg">
+                    <img height="50px" src="images/sam-balye-WNVnnHHcBeM-unsplash.jpg">
                     <div class="carousel-caption">
                         <b>
                             <h1 class="text-primary">
@@ -75,7 +75,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <img src="images/patrick-fore-b_SHPU5M3nk-unsplash.jpg">
+                    <img height="50px" src="images/patrick-fore-b_SHPU5M3nk-unsplash.jpg">
                     <div class="carousel-caption">
                         <b>
                             <h1 class="text-primary">
@@ -87,7 +87,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <img src="images/john-cafazza-AeABkasP-24-unsplash.jpg">
+                    <img height="50px" src="images/john-cafazza-AeABkasP-24-unsplash.jpg">
                     <div class="carousel-caption">
                         <b>
                             <h1 class="text-primary">
@@ -120,7 +120,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Sunday Worship</h5>
                         <p class="card-text">Join us every Sunday for a powerful worship service.</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
+                        <!-- <a href="#" class="btn btn-primary">Learn More</a> -->
                     </div>
                 </div>
             </div>
@@ -130,7 +130,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Community Outreach</h5>
                         <p class="card-text">Get involved in our community outreach programs and make a difference.</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
+                        <!-- <a href="#" class="btn btn-primary">Learn More</a> -->
                     </div>
                 </div>
             </div>
@@ -140,7 +140,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Bible Study</h5>
                         <p class="card-text">Join our weekly Bible study sessions to deepen your faith.</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
+                        <!-- <a href="#" class="btn btn-primary">Learn More</a> -->
                     </div>
                 </div>
             </div>
@@ -154,7 +154,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Worship </h5>
                             <p class="card-text">Join us for an exciting worship session. One near God.</p>
-                            <a href="index.php" class="btn btn-primary">Learn More</a>
+                            <!-- <a href="index.php" class="btn btn-primary">Learn More</a> -->
                         </div>
                     </div>
                 </div>
