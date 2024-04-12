@@ -146,7 +146,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <img src="images/bg.jpg" class="card-img-top" alt="Image 3">
+                    <img src="images/1.png" class="card-img-top" alt="Image 3">
                     <div class="card-body">
                         <h5 class="card-title">Bible Study</h5>
                         <p class="card-text">Join our weekly Bible study sessions to deepen your faith.</p>
@@ -184,7 +184,7 @@
                 <!-- Column 3 -->
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="images/john-cafazza-AeABkasP-24-unsplash.jpg" class="card-img-top" alt="Image 3">
+                        <img src="images/2.png" class="card-img-top" alt="Image 3">
                         <div class="card-body">
                             <h5 class="card-title">Hillside Prayer</h5>
                             <p class="card-text">Achieve that direct talk with God today!</p>

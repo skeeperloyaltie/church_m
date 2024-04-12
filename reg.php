@@ -190,7 +190,7 @@
 
         if ($count > 0) {
             echo "<script>alert('This Member Already Exists');</script>";
-            echo "<script>window.location = 'index.php';</script>";
+            // echo "<script>window.location = 'index.php';</script>";
         } else {
             // Insert new member with hashed password
             $insert_query = "INSERT INTO members (fname, sname, lname, Gender, birthday, residence, pob, ministry, mobile, email, thumbnail, username, password, id)
@@ -201,7 +201,7 @@
                 $activity_query = "INSERT INTO activity_log (date, username, action) VALUES (NOW(), '$admin_username', 'Added member $username')";
                 mysqli_query($conn, $activity_query);
 
-                echo "<script>window.location = 'index.php';</script>";
+                // echo "<script>window.location = 'index.php';</script>";
                 echo "<script>$.jGrowl('Member Successfully added', { header: 'Member add' });</script>";
             } else {
                 echo "Error: " . mysqli_error($conn);
