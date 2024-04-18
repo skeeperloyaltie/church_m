@@ -263,18 +263,13 @@ normal'><span style='font-size:12.0pt;mso-bidi-font-size:11.0pt;font-family:
                       <?php } ?>
                       <!--mysqli FETCH ARRAY-->
                       </tr>
-                      ?php
+                     <?php
 $totalAmount = 0; // Initialize total amount
 $student_query = mysqli_query($conn, "SELECT * FROM members INNER JOIN giving ON members.mobile = giving.na") or die(mysqli_error($conn));
 while ($row = mysqli_fetch_array($student_query)) {
     $totalAmount += $row['Amount']; // Accumulate the total amount
-    ?>
-    <tr style='mso-yfti-irow:1'>
-        <!-- Existing Rows -->
-    </tr>
-    <?php
 }
-?>
+    ?>
 <!-- Total Amount Row -->
 <tr style='mso-yfti-irow:2;mso-yfti-lastrow:yes;height:23.25pt'>
     <td colspan="6" style='border:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:23.25pt;background:#D9D9D9;mso-background-themecolor:background1;mso-background-themeshade:217;'>
