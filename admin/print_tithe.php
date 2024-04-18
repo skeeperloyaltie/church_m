@@ -152,6 +152,17 @@ normal'><span style='font-size:12.0pt;mso-bidi-font-size:11.0pt;font-family:
                       </span></p>
                     <table class=msoTableGrid border=1 cellspacing=0 cellpadding=0 style='border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
  mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
+
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:23.25pt'>
+  <th colspan="6" style='width:1132.9pt;border:solid windowtext 1.0pt;
+    mso-border-alt:solid windowtext .5pt;background:#BFBFBF;mso-background-themecolor:background1;
+    mso-background-themeshade:191;padding:0in 5.4pt 0in 5.4pt;height:23.25pt; text-align:center;'>
+    <p class=msoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:normal'>
+      <b><span style='font-family:"Times New Roman","serif"'>Members Tithes<o:p></o:p></span></b>
+    </p>
+  </th>
+</tr>
+
                       <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:23.25pt'>
                         <td width=188 style='width:140.9pt;border:solid windowtext 1.0pt;mso-border-alt:
   solid windowtext .5pt;background:#BFBFBF;mso-background-themecolor:background1;
@@ -250,21 +261,21 @@ normal'><span style='font-size:12.0pt;mso-bidi-font-size:11.0pt;font-family:
                       <!--mysqli FETCH ARRAY-->
                       </tr>
                       <?php
-$totalAmount = 0;  // Initialize the total amount variable
-$student_query = mysqli_query($conn,"select * from members INNER JOIN tithe ON members.mobile=tithe.na ")or die(mysqli_error());
-while($row = mysqli_fetch_array($student_query)){
-    $totalAmount += $row['Amount'];  // Accumulate the total amount of tithes
-}
-?>
-<!-- Total Amount Row -->
-<tr style='mso-yfti-irow:2;mso-yfti-lastrow:yes;height:23.25pt'>
-    <td colspan="5" style='border:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:23.25pt;background:#D9D9D9;mso-background-themecolor:background1;mso-background-themeshade:217;'>
-        <p class=msoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:normal'><b><span style='font-family:"Times New Roman","serif"'>Total Tithe:<o:p></o:p></span></b></p>
-    </td>
-    <td style='border:solid windowtext 1.0pt;border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:23.25pt'>
-        <p class=msoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:normal'><b><span style='font-family:"Times New Roman","serif"'><?php echo number_format($totalAmount, 2); ?><o:p></o:p></span></b></p>
-    </td>
-</tr>
+                      $totalAmount = 0;  // Initialize the total amount variable
+                      $student_query = mysqli_query($conn, "select * from members INNER JOIN tithe ON members.mobile=tithe.na ") or die(mysqli_error());
+                      while ($row = mysqli_fetch_array($student_query)) {
+                        $totalAmount += $row['Amount'];  // Accumulate the total amount of tithes
+                      }
+                      ?>
+                      <!-- Total Amount Row -->
+                      <tr style='mso-yfti-irow:2;mso-yfti-lastrow:yes;height:23.25pt'>
+                        <td colspan="5" style='border:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:23.25pt;background:#D9D9D9;mso-background-themecolor:background1;mso-background-themeshade:217;'>
+                          <p class=msoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:normal'><b><span style='font-family:"Times New Roman","serif"'>Total Tithe:<o:p></o:p></span></b></p>
+                        </td>
+                        <td style='border:solid windowtext 1.0pt;border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:23.25pt'>
+                          <p class=msoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:normal'><b><span style='font-family:"Times New Roman","serif"'><?php echo number_format($totalAmount, 2); ?><o:p></o:p></span></b></p>
+                        </td>
+                      </tr>
 
 
                       <tr style='mso-yfti-irow:2;mso-yfti-lastrow:yes'>
