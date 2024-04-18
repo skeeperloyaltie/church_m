@@ -1,4 +1,7 @@
-<?php include('header.php'); ?>
+<?php include('header.php'); 
+error_reporting(E_ALL);
+ini_set('display_errors', 'On');
+?>
 <body class="body"  id="login">
     <div class="container">
 		<div class="row-fluid">

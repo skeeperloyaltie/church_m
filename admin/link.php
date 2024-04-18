@@ -1,4 +1,7 @@
-
+<?php 
+error_reporting(E_ALL);
+ini_set('display_errors', 'On');
+?>
 <div class="navbar">
      <div class="navbar-inner">
          <div class="container-fluid">
