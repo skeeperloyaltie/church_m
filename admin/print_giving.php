@@ -263,6 +263,28 @@ normal'><span style='font-size:12.0pt;mso-bidi-font-size:11.0pt;font-family:
                       <?php } ?>
                       <!--mysqli FETCH ARRAY-->
                       </tr>
+                      ?php
+$totalAmount = 0; // Initialize total amount
+$student_query = mysqli_query($conn, "SELECT * FROM members INNER JOIN giving ON members.mobile = giving.na") or die(mysqli_error($conn));
+while ($row = mysqli_fetch_array($student_query)) {
+    $totalAmount += $row['Amount']; // Accumulate the total amount
+    ?>
+    <tr style='mso-yfti-irow:1'>
+        <!-- Existing Rows -->
+    </tr>
+    <?php
+}
+?>
+<!-- Total Amount Row -->
+<tr style='mso-yfti-irow:2;mso-yfti-lastrow:yes;height:23.25pt'>
+    <td colspan="6" style='border:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:23.25pt;background:#D9D9D9;mso-background-themecolor:background1;mso-background-themeshade:217;'>
+        <p class=msoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:normal'><b><span style='font-family:"Times New Roman","serif"'>Total Amount:<o:p></o:p></span></b></p>
+    </td>
+    <td style='border:solid windowtext 1.0pt;border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:23.25pt'>
+        <p class=msoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:normal'><b><span style='font-family:"Times New Roman","serif"'><?php echo number_format($totalAmount, 2); ?><o:p></o:p></span></b></p>
+    </td>
+</tr>
+
                       <tr style='mso-yfti-irow:2;mso-yfti-lastrow:yes'>
                         <td width=1127 colspan=6 valign=top style='width:845.5pt;border:solid windowtext 1.0pt;
   border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
