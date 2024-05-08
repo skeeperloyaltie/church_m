@@ -24,7 +24,7 @@
                  <select class="form-control giving-reason" name="for">
                    <option value="Tithes">Tithes</option>
                    <option value="Offering">Offering</option>
-                   <option value="Other">Any Other</option>
+                   <option value="Other">Welfare</option>
                  </select>
                  <input type="text" class="form-control other-reason" name="otherReason[]" placeholder="Specify if 'Any Other'" style="display:none;">
                </div>
