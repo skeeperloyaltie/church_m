@@ -284,7 +284,7 @@ normal'><span style='font-size:12.0pt;mso-bidi-font-size:11.0pt;font-family:
                       <!--mysqli FETCH ARRAY-->
                       </tr>
                       <tr style='mso-yfti-irow:2;mso-yfti-lastrow:yes'>
-                        <td width=1127 colspan=6 valign=top style='width:845.5pt;border:solid windowtext 1.0pt;
+                        <td width=1127 colspan=8 valign=top style='width:845.5pt;border:solid windowtext 1.0pt;
   border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt'>
                           <p class=msoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
