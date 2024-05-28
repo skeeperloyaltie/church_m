@@ -139,7 +139,7 @@
                 </div>
             </div>
             <div class="mb-3">
-                <input type="submit" class="btn btn-primary" value="Sign up" name="submit" />
+                <input type="submit" class="btn btn-primary" value="Sign up" style="background-color: purple;" name="submit" />
             </div>
             <p class="change_link">
                 Already a member? <a href="login.php" class="to_register">Go and log in</a>
